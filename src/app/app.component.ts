@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ThemePalette } from "@angular/material/core";
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  showFiller = false;
+  color: ThemePalette = 'warn';
+
   title = 'dc-ticket';
 }
