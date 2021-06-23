@@ -2,7 +2,7 @@ import {TicketTemplate} from "./ticket";
 
 export const BACKLOG_DATA: TicketTemplate[] = [
   {
-    id: 3,
+    id: 5,
     status: "New",
     lvl: 1,
     category: "Account",
@@ -10,7 +10,7 @@ export const BACKLOG_DATA: TicketTemplate[] = [
     agent: "Mickey Mouse",
     lastUpdateTimestamp: "06/22/2021",
     lastUpdateAgent: "",
-    userMail: "noob4@digitalchick.fr",
+    userMail: "user4@digitalchick.fr",
     closeTimestamp: ""
   },
   {
@@ -22,19 +22,19 @@ export const BACKLOG_DATA: TicketTemplate[] = [
     agent: "Sirius B",
     lastUpdateTimestamp: "06/21/2021",
     lastUpdateAgent: "Sirius Black",
-    userMail: "noob3@digitalchick.fr",
+    userMail: "user3@digitalchick.fr",
     closeTimestamp: ""
   },
   {
     id: 3,
     status: "Close",
-    lvl: 3,
+    lvl: 2,
     category: "Errors",
     tag: "404",
     agent: "Sirius Black",
     lastUpdateTimestamp: "06/21/2021",
     lastUpdateAgent: "Sirius Black",
-    userMail: "noob@digitalchick.fr",
+    userMail: "user@digitalchick.fr",
     closeTimestamp: "06/21/2021"
   },
   {
@@ -46,7 +46,7 @@ export const BACKLOG_DATA: TicketTemplate[] = [
     agent: "Sirius Black",
     lastUpdateTimestamp: "06/20/2021",
     lastUpdateAgent: "Sasha Ketchum",
-    userMail: "noob2@digitalchick.fr",
+    userMail: "user2@digitalchick.fr",
     closeTimestamp: "06/20/2021"
   },
   {
@@ -58,7 +58,7 @@ export const BACKLOG_DATA: TicketTemplate[] = [
     agent: "Sasha Ketchum",
     lastUpdateTimestamp: "06/20/2021",
     lastUpdateAgent: "Sasha Ketchum",
-    userMail: "noob@digitalchick.fr",
+    userMail: "user@digitalchick.fr",
     closeTimestamp: "06/20/2021"
   }
 ];
