@@ -9,18 +9,26 @@ import {MatTableModule} from '@angular/material/table';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatDividerModule} from '@angular/material/divider';
 
 // component
 import { AppComponent } from './app.component';
 import { BacklogComponent } from './backlog/backlog.component';
 import { BacklogSelectorComponent } from './backlog-selector/backlog-selector.component';
+import { BacklogToolsComponent } from './backlog-tools/backlog-tools.component';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatSelectModule} from "@angular/material/select";
+import {MatListModule} from "@angular/material/list";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     BacklogComponent,
-    BacklogSelectorComponent
+    BacklogSelectorComponent,
+    BacklogToolsComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +37,13 @@ import { BacklogSelectorComponent } from './backlog-selector/backlog-selector.co
     MatTableModule,
     MatExpansionModule,
     MatSlideToggleModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatDividerModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

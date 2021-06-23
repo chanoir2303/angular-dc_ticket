@@ -1,2 +1,19 @@
-<app-backlog-selector></app-backlog-selector>
-<app-backlog></app-backlog>
+
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="left-sidenav" mode="side">
+    <mat-list>
+      <mat-list-item><mat-icon>view_list</mat-icon>Backlog</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item><mat-icon>support_agent</mat-icon>Team</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item><mat-icon>leaderboard</mat-icon>Stats</mat-list-item>
+
+    </mat-list>
+  </mat-drawer>
+  <button type="button" mat-button (click)="drawer.toggle()" mat-icon-button color="warn" aria-label="Example icon button with a menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <app-backlog-tools></app-backlog-tools>
+  <app-backlog></app-backlog>
+
+</mat-drawer-container>
