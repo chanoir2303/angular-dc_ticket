@@ -2,7 +2,7 @@
 <mat-drawer-container class="container" autosize>
   <mat-drawer #drawer class="left-sidenav" mode="side">
     <mat-list>
-      <mat-list-item><mat-icon [color]="color" class="margin">build_circle</mat-icon>Backlog</mat-list-item>
+      <mat-list-item><a routerLink="/backlog"><mat-icon [color]="color" class="margin">build_circle</mat-icon>Backlog</a></mat-list-item>
       <mat-divider></mat-divider>
       <mat-list-item><mat-icon [color]="color" class="margin">support_agent</mat-icon>Profile</mat-list-item>
       <mat-divider></mat-divider>
@@ -17,7 +17,6 @@
     <span>dc-ticket</span>
   </mat-toolbar>
 
-  <app-backlog-tools></app-backlog-tools>
-  <app-backlog></app-backlog>
+<router-outlet></router-outlet>
 
 </mat-drawer-container>
