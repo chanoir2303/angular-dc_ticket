@@ -1,30 +1,60 @@
-<mat-accordion>
-  <mat-expansion-panel (opened)="panelOpenState = true"
-                       (closed)="panelOpenState = false">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Sort by
-      </mat-panel-title>
-    </mat-expansion-panel-header>
+<div>
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Sort by
+        </mat-panel-title>
+      </mat-expansion-panel-header>
 
-    <mat-slide-toggle
-      [color]="color"
-      [checked]="checked"
-      [disabled]="disabled">
-      Last creation
-    </mat-slide-toggle>
-    <mat-slide-toggle
-      [color]="color"
-      [checked]="checked"
-      [disabled]="disabled">
-      Last update
-    </mat-slide-toggle>
-    <mat-slide-toggle
-      [color]="color"
-      [checked]="checked"
-      [disabled]="disabled">
-      Pending
-    </mat-slide-toggle>
-  </mat-expansion-panel>
-</mat-accordion>
+      <mat-slide-toggle
+        [color]="color"
+        [checked]="checked"
+        [disabled]="disabled">
+        Last creation
+      </mat-slide-toggle>
+      <mat-slide-toggle
+        [color]="color"
+        [checked]="checked"
+        [disabled]="disabled">
+        Last update
+      </mat-slide-toggle>
+      <mat-slide-toggle
+        [color]="color"
+        [checked]="checked"
+        [disabled]="disabled">
+        Pending
+      </mat-slide-toggle>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Order by
+        </mat-panel-title>
+      </mat-expansion-panel-header>
 
+      <mat-slide-toggle
+        [color]="color"
+        [checked]="checked"
+        [disabled]="disabled">
+        Name
+      </mat-slide-toggle>
+      <mat-slide-toggle
+        [color]="color"
+        [checked]="checked"
+        [disabled]="disabled">
+        Id
+      </mat-slide-toggle>
+      <mat-slide-toggle
+        [color]="color"
+        [checked]="checked"
+        [disabled]="disabled">
+        Agent
+      </mat-slide-toggle>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

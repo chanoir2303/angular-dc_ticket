@@ -11,7 +11,7 @@ export class BacklogSelectorComponent implements OnInit {
   panelOpenState = false;
 
   color: ThemePalette = 'warn';
-  checked = false;
+  checked = true;
   disabled = false;
 
   constructor() { }

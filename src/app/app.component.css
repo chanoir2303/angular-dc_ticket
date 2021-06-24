@@ -13,3 +13,11 @@
 .left-sidenav {
   padding: 40px;
 }
+
+.margin {
+  margin-right: 10px;
+}
+
+span {
+  margin-left: 20px;
+}

@@ -22,6 +22,8 @@ import { BacklogToolsComponent } from './backlog-tools/backlog-tools.component';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatSelectModule} from "@angular/material/select";
 import {MatListModule} from "@angular/material/list";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import { BacklogViewComponent } from './backlog-view/backlog-view.component';
 
 
 @NgModule({
@@ -29,24 +31,26 @@ import {MatListModule} from "@angular/material/list";
     AppComponent,
     BacklogComponent,
     BacklogSelectorComponent,
-    BacklogToolsComponent
+    BacklogToolsComponent,
+    BacklogViewComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatTableModule,
-    MatExpansionModule,
-    MatSlideToggleModule,
-    MatIconModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    MatDividerModule,
-    MatListModule,
-    MatPaginatorModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatTableModule,
+        MatExpansionModule,
+        MatSlideToggleModule,
+        MatIconModule,
+        MatButtonModule,
+        MatSidenavModule,
+        MatFormFieldModule,
+        MatSelectModule,
+        MatDividerModule,
+        MatListModule,
+        MatPaginatorModule,
+        MatToolbarModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

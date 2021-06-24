@@ -1,3 +1,16 @@
 .mat-form-field + .mat-form-field {
   margin-left: 8px;
 }
+
+mat-accordion {
+  margin-left: 10px;
+}
+mat-slide-toggle {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+div {
+  display: flex;
+}

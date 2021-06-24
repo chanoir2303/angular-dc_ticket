@@ -2,17 +2,21 @@
 <mat-drawer-container class="container" autosize>
   <mat-drawer #drawer class="left-sidenav" mode="side">
     <mat-list>
-      <mat-list-item><mat-icon [color]="color">view_list</mat-icon>Backlog</mat-list-item>
+      <mat-list-item><mat-icon [color]="color" class="margin">build_circle</mat-icon>Backlog</mat-list-item>
       <mat-divider></mat-divider>
-      <mat-list-item><mat-icon [color]="color">support_agent</mat-icon>Team</mat-list-item>
+      <mat-list-item><mat-icon [color]="color" class="margin">support_agent</mat-icon>Profile</mat-list-item>
       <mat-divider></mat-divider>
-      <mat-list-item><mat-icon [color]="color">leaderboard</mat-icon>Stats</mat-list-item>
+      <mat-list-item><mat-icon [color]="color" class="margin">leaderboard</mat-icon>Stats</mat-list-item>
 
     </mat-list>
   </mat-drawer>
-  <button type="button" mat-button (click)="drawer.toggle()" mat-icon-button color="warn" aria-label="Example icon button with a menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
+  <mat-toolbar [color]="color">
+    <button type="button" mat-button (click)="drawer.toggle()" mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>dc-ticket</span>
+  </mat-toolbar>
+
   <app-backlog-tools></app-backlog-tools>
   <app-backlog></app-backlog>
 
