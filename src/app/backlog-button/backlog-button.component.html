@@ -1,5 +1,13 @@
-<button mat-mini-fab color="warn">
+<button mat-mini-fab color="warn"
+        #tooltip="matTooltip"
+        matTooltip="Create a new ticket"
+        [matTooltipPosition]="position.value"
+        matTooltipHideDelay="50">
   <mat-icon>add</mat-icon>
+</button>
+<button
+        class="invisible">
+        none
 </button>
 <button
   mat-mini-fab
@@ -7,18 +15,41 @@
   matBadge="4"
   [matBadgeHidden]="hidden"
   (click)="toggleBadgeVisibility()"
-  matBadgeColor="accent">
+  matBadgeColor="accent"
+  #tooltip="matTooltip"
+  matTooltip="Messages"
+  [matTooltipPosition]="position.value"
+  matTooltipHideDelay="50">
   <mat-icon>messages</mat-icon>
+</button>
+<button
+  class="invisible">
+  none
 </button>
 <button
   mat-mini-fab
   color="warn"
   matBadge="7"
-  [matBadgeHidden]="hidden"
-  (click)="toggleBadgeVisibility()"
-  matBadgeColor="accent">
+  [matBadgeHidden]="hiddenBis"
+  (click)="toggleBadgeVisibilityBis()"
+  matBadgeColor="accent"
+  #tooltip="matTooltip"
+  matTooltip="Notifications"
+  [matTooltipPosition]="position.value"
+  matTooltipHideDelay="50">
   <mat-icon>notifications</mat-icon>
 </button>
-<button mat-mini-fab color="warn" class="last-button">
+<button
+  class="invisible">
+  none
+</button>
+<button
+  mat-mini-fab color="warn"
+  id="logout-button"
+  #tooltip="matTooltip"
+  matTooltip="Logout"
+  matTooltipClass="tooltip-red"
+  [matTooltipPosition]="position.value"
+  matTooltipHideDelay="50">
   <mat-icon>logout</mat-icon>
 </button>

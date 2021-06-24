@@ -14,3 +14,7 @@ app-backlog-selector {
 app-backlog-navbar {
   margin: 15px;
 }
+
+app-backlog-button {
+  margin-top: 15px;
+}

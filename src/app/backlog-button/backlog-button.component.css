@@ -1,8 +1,13 @@
-button {
-  margin-top: 20px;
-  margin-left: 15px;
+#logout-button {
+  margin-right: 40px;
 }
 
-.last-button {
-  margin-right: 40px;
+.tooltip-red {
+  background: #b71c1c;
+}
+
+.invisible {
+  width: 10px;
+  height: 10px;
+  opacity: 0;
 }
