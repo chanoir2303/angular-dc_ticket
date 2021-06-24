@@ -1,0 +1,24 @@
+<button mat-mini-fab color="warn">
+  <mat-icon>add</mat-icon>
+</button>
+<button
+  mat-mini-fab
+  color="warn"
+  matBadge="4"
+  [matBadgeHidden]="hidden"
+  (click)="toggleBadgeVisibility()"
+  matBadgeColor="accent">
+  <mat-icon>messages</mat-icon>
+</button>
+<button
+  mat-mini-fab
+  color="warn"
+  matBadge="7"
+  [matBadgeHidden]="hidden"
+  (click)="toggleBadgeVisibility()"
+  matBadgeColor="accent">
+  <mat-icon>notifications</mat-icon>
+</button>
+<button mat-mini-fab color="warn" class="last-button">
+  <mat-icon>logout</mat-icon>
+</button>

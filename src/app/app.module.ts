@@ -13,17 +13,22 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatInputModule} from "@angular/material/input";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatSelectModule} from "@angular/material/select";
+import {MatListModule} from "@angular/material/list";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 // component
 import { AppComponent } from './app.component';
 import { BacklogComponent } from './backlog/backlog.component';
 import { BacklogSelectorComponent } from './backlog-selector/backlog-selector.component';
 import { BacklogToolsComponent } from './backlog-tools/backlog-tools.component';
-import {MatFormFieldModule} from "@angular/material/form-field";
-import {MatSelectModule} from "@angular/material/select";
-import {MatListModule} from "@angular/material/list";
-import {MatToolbarModule} from "@angular/material/toolbar";
 import { BacklogViewComponent } from './backlog-view/backlog-view.component';
+import { BacklogNavbarComponent } from './backlog-navbar/backlog-navbar.component';
+import { BacklogButtonComponent } from './backlog-button/backlog-button.component';
 
 
 @NgModule({
@@ -32,25 +37,30 @@ import { BacklogViewComponent } from './backlog-view/backlog-view.component';
     BacklogComponent,
     BacklogSelectorComponent,
     BacklogToolsComponent,
-    BacklogViewComponent
+    BacklogViewComponent,
+    BacklogNavbarComponent,
+    BacklogButtonComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatTableModule,
-        MatExpansionModule,
-        MatSlideToggleModule,
-        MatIconModule,
-        MatButtonModule,
-        MatSidenavModule,
-        MatFormFieldModule,
-        MatSelectModule,
-        MatDividerModule,
-        MatListModule,
-        MatPaginatorModule,
-        MatToolbarModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTableModule,
+    MatExpansionModule,
+    MatSlideToggleModule,
+    MatIconModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatDividerModule,
+    MatListModule,
+    MatPaginatorModule,
+    MatToolbarModule,
+    MatInputModule,
+    MatBadgeModule,
+    MatTooltipModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

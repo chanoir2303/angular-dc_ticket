@@ -19,7 +19,7 @@ export const BACKLOG_DATA: TicketTemplate[] = [
     lvl: 3,
     category: "Errors",
     tag: "500",
-    agent: "Sirius B",
+    agent: "Sirius Black",
     lastUpdateTimestamp: "06/21/2021",
     lastUpdateAgent: "Sirius Black",
     userMail: "user3@digitalchick.fr",

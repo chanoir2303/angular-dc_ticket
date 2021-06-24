@@ -1,11 +1,16 @@
 div {
   display: flex;
+  justify-content: space-between;
+}
+
+#left {
+  display: flex;
 }
 
 app-backlog-selector {
-  margin: 20px;
+  margin: 15px;
 }
 
-button {
-  margin-top: 25px;
+app-backlog-navbar {
+  margin: 15px;
 }
