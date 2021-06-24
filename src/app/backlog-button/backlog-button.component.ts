@@ -1,6 +1,8 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {TooltipPosition} from '@angular/material/tooltip';
+import { MatDialog } from '@angular/material/dialog'
+import {BacklogDialogComponent} from "../backlog-dialog/backlog-dialog.component";
 
 @Component({
   selector: 'app-backlog-button',
@@ -11,6 +13,17 @@ import {TooltipPosition} from '@angular/material/tooltip';
   encapsulation: ViewEncapsulation.None,
 })
 export class BacklogButtonComponent implements OnInit {
+
+  constructor(public dialog: MatDialog) { }
+
+  //dialog
+  openDialog() {
+    const dialogRef = this.dialog.open(BacklogDialogComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 
   // badge
   hidden = false;
@@ -28,7 +41,7 @@ export class BacklogButtonComponent implements OnInit {
   positionOptions: TooltipPosition[] = ['below', 'above', 'left', 'right'];
   position = new FormControl(this.positionOptions[0]);
 
-  constructor() { }
+
 
   ngOnInit(): void {
   }

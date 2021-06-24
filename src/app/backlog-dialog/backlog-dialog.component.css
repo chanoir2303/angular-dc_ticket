@@ -1,0 +1,8 @@
+mat-form-field {
+  margin-right: 10px;
+}
+
+.next-button {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -20,6 +20,8 @@ import {MatSelectModule} from "@angular/material/select";
 import {MatListModule} from "@angular/material/list";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatStepperModule} from '@angular/material/stepper';
 
 // component
 import { AppComponent } from './app.component';
@@ -29,6 +31,8 @@ import { BacklogToolsComponent } from './backlog-tools/backlog-tools.component';
 import { BacklogViewComponent } from './backlog-view/backlog-view.component';
 import { BacklogNavbarComponent } from './backlog-navbar/backlog-navbar.component';
 import { BacklogButtonComponent } from './backlog-button/backlog-button.component';
+import { BacklogDialogComponent } from './backlog-dialog/backlog-dialog.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -39,7 +43,8 @@ import { BacklogButtonComponent } from './backlog-button/backlog-button.componen
     BacklogToolsComponent,
     BacklogViewComponent,
     BacklogNavbarComponent,
-    BacklogButtonComponent
+    BacklogButtonComponent,
+    BacklogDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +64,11 @@ import { BacklogButtonComponent } from './backlog-button/backlog-button.componen
     MatToolbarModule,
     MatInputModule,
     MatBadgeModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatDialogModule,
+    MatStepperModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

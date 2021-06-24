@@ -2,7 +2,8 @@
         #tooltip="matTooltip"
         matTooltip="Create a new ticket"
         [matTooltipPosition]="position.value"
-        matTooltipHideDelay="50">
+        matTooltipHideDelay="50"
+        (click)="openDialog()">
   <mat-icon>add</mat-icon>
 </button>
 <button

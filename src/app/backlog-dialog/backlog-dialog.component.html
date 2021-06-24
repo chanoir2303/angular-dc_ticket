@@ -1,0 +1,70 @@
+<mat-vertical-stepper [linear]="isLinear" #stepper [color]="color">
+
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+
+      <ng-template matStepLabel>Select a category and a tag for your issue</ng-template>
+
+      <mat-form-field [color]="color">
+        <mat-label>Category</mat-label>
+        <mat-select [(ngModel)]="selectedValue" name="food">
+          <mat-option *ngFor="let category of category" [value]="category.value">
+            {{category.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field [color]="color">
+        <mat-label>Tag</mat-label>
+        <mat-select [(ngModel)]="selectedValue" name="tag">
+          <mat-option *ngFor="let tag of tag" [value]="tag.value">
+            {{tag.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div class="next-button">
+        <button mat-button matStepperNext>Next</button>
+      </div>
+
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Give a technical description</ng-template>
+      <mat-form-field [color]="color">
+        <mat-label>Description</mat-label>
+        <textarea matNativeControl formControlName="thirdCtrl"></textarea>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="thirdFormGroup">
+    <form [formGroup]="thirdFormGroup">
+      <ng-template matStepLabel>Fill out your mail to contact you when your issue is solve</ng-template>
+      <mat-form-field [color]="color">
+        <mat-label>Mail address</mat-label>
+        <input matInput formControlName="secondCtrl" placeholder="user@digitalchick.com">
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel>Validation</ng-template>
+    <p>Are you sure to post this ticket?</p>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Post</button>
+    </div>
+  </mat-step>
+
+</mat-vertical-stepper>
