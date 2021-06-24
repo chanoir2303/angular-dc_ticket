@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 // @angular/material
 import {MatTableModule} from '@angular/material/table';
@@ -32,8 +33,9 @@ import { BacklogViewComponent } from './backlog-view/backlog-view.component';
 import { BacklogNavbarComponent } from './backlog-navbar/backlog-navbar.component';
 import { BacklogButtonComponent } from './backlog-button/backlog-button.component';
 import { BacklogDialogComponent } from './backlog-dialog/backlog-dialog.component';
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { NotificationsDialogComponent } from './notifications-dialog/notifications-dialog.component';
+import { ProfileViewComponent } from './profile-view/profile-view.component';
+import { ProfileInfosComponent } from './profile-infos/profile-infos.component';
 
 
 @NgModule({
@@ -46,7 +48,9 @@ import { NotificationsDialogComponent } from './notifications-dialog/notificatio
     BacklogNavbarComponent,
     BacklogButtonComponent,
     BacklogDialogComponent,
-    NotificationsDialogComponent
+    NotificationsDialogComponent,
+    ProfileViewComponent,
+    ProfileInfosComponent
   ],
   imports: [
     BrowserModule,
