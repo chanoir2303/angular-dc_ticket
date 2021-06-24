@@ -3,6 +3,7 @@ import {FormControl} from '@angular/forms';
 import {TooltipPosition} from '@angular/material/tooltip';
 import { MatDialog } from '@angular/material/dialog'
 import {BacklogDialogComponent} from "../backlog-dialog/backlog-dialog.component";
+import {NotificationsDialogComponent} from "../notifications-dialog/notifications-dialog.component";
 
 @Component({
   selector: 'app-backlog-button',
@@ -17,8 +18,16 @@ export class BacklogButtonComponent implements OnInit {
   constructor(public dialog: MatDialog) { }
 
   //dialog
-  openDialog() {
+  openDialogTicket() {
     const dialogRef = this.dialog.open(BacklogDialogComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+
+  openDialogNotifications() {
+    const dialogRef = this.dialog.open(NotificationsDialogComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);

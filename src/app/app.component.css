@@ -26,3 +26,13 @@ a {
   text-decoration: none;
   color: black;
 }
+
+#text-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#hello-account {
+  font-size: medium;
+  font-weight: lighter;
+}

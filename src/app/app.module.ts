@@ -33,6 +33,7 @@ import { BacklogNavbarComponent } from './backlog-navbar/backlog-navbar.componen
 import { BacklogButtonComponent } from './backlog-button/backlog-button.component';
 import { BacklogDialogComponent } from './backlog-dialog/backlog-dialog.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { NotificationsDialogComponent } from './notifications-dialog/notifications-dialog.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     BacklogViewComponent,
     BacklogNavbarComponent,
     BacklogButtonComponent,
-    BacklogDialogComponent
+    BacklogDialogComponent,
+    NotificationsDialogComponent
   ],
   imports: [
     BrowserModule,
