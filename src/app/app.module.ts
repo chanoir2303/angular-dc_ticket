@@ -23,6 +23,7 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatStepperModule} from '@angular/material/stepper';
+import {MatCardModule} from "@angular/material/card";
 
 // component
 import { AppComponent } from './app.component';
@@ -74,7 +75,8 @@ import { ProfileInfosComponent } from './profile-infos/profile-infos.component';
     MatDialogModule,
     MatStepperModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
