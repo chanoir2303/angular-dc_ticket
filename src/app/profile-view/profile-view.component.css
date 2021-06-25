@@ -7,3 +7,10 @@ app-backlog-button {
 app-profile-infos {
   margin-top: 45px;
 }
+
+app-profile-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -200px;
+  margin-right: 350px;
+}

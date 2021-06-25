@@ -41,6 +41,7 @@ import { ProfileChartComponent } from './profile-chart/profile-chart.component';
 
 // tiers
 import { ChartsModule } from "ng2-charts";
+import { ProfileButtonComponent } from './profile-button/profile-button.component';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { ChartsModule } from "ng2-charts";
     NotificationsDialogComponent,
     ProfileViewComponent,
     ProfileInfosComponent,
-    ProfileChartComponent
+    ProfileChartComponent,
+    ProfileButtonComponent
   ],
   imports: [
     BrowserModule,
