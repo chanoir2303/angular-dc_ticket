@@ -1,4 +1,9 @@
-app-profile-infos {
-  margin-left: 30px;
+app-backlog-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
 }
 
+app-profile-infos {
+  margin-top: 45px;
+}

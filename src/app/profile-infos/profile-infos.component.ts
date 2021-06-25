@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemePalette } from "@angular/material/core";
 
 @Component({
   selector: 'app-profile-infos',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile-infos.component.css']
 })
 export class ProfileInfosComponent implements OnInit {
+
+  color: ThemePalette = 'warn';
 
   constructor() { }
 

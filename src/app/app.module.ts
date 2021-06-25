@@ -37,6 +37,10 @@ import { BacklogDialogComponent } from './backlog-dialog/backlog-dialog.componen
 import { NotificationsDialogComponent } from './notifications-dialog/notifications-dialog.component';
 import { ProfileViewComponent } from './profile-view/profile-view.component';
 import { ProfileInfosComponent } from './profile-infos/profile-infos.component';
+import { ProfileChartComponent } from './profile-chart/profile-chart.component';
+
+// tiers
+import { ChartsModule } from "ng2-charts";
 
 
 @NgModule({
@@ -51,7 +55,8 @@ import { ProfileInfosComponent } from './profile-infos/profile-infos.component';
     BacklogDialogComponent,
     NotificationsDialogComponent,
     ProfileViewComponent,
-    ProfileInfosComponent
+    ProfileInfosComponent,
+    ProfileChartComponent
   ],
   imports: [
     BrowserModule,
@@ -76,7 +81,8 @@ import { ProfileInfosComponent } from './profile-infos/profile-infos.component';
     MatStepperModule,
     ReactiveFormsModule,
     FormsModule,
-    MatCardModule
+    MatCardModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
