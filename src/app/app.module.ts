@@ -3,27 +3,28 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 // @angular/material
-import {MatTableModule} from '@angular/material/table';
-import {MatExpansionModule} from '@angular/material/expansion';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatDividerModule} from '@angular/material/divider';
-import {MatPaginatorModule} from '@angular/material/paginator';
-import {MatBadgeModule} from '@angular/material/badge';
-import {MatInputModule} from "@angular/material/input";
-import {MatFormFieldModule} from "@angular/material/form-field";
-import {MatSelectModule} from "@angular/material/select";
-import {MatListModule} from "@angular/material/list";
-import {MatToolbarModule} from "@angular/material/toolbar";
-import {MatTooltipModule} from '@angular/material/tooltip';
-import {MatDialogModule} from '@angular/material/dialog';
-import {MatStepperModule} from '@angular/material/stepper';
-import {MatCardModule} from "@angular/material/card";
+import { MatTableModule } from '@angular/material/table';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatInputModule } from "@angular/material/input";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatSelectModule } from "@angular/material/select";
+import { MatListModule } from "@angular/material/list";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatCardModule } from "@angular/material/card";
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 // component
 import { AppComponent } from './app.component';
@@ -38,11 +39,10 @@ import { NotificationsDialogComponent } from './notifications-dialog/notificatio
 import { ProfileViewComponent } from './profile-view/profile-view.component';
 import { ProfileInfosComponent } from './profile-infos/profile-infos.component';
 import { ProfileChartComponent } from './profile-chart/profile-chart.component';
+import { ProfileButtonComponent } from './profile-button/profile-button.component';
 
 // tiers
 import { ChartsModule } from "ng2-charts";
-import { ProfileButtonComponent } from './profile-button/profile-button.component';
-
 
 @NgModule({
   declarations: [
@@ -84,7 +84,8 @@ import { ProfileButtonComponent } from './profile-button/profile-button.componen
     ReactiveFormsModule,
     FormsModule,
     MatCardModule,
-    ChartsModule
+    ChartsModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

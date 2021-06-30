@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "dc-ticket": {
+      "hosting": {
+        "dc-ticket": [
+          "dc-ticket"
+        ]
+      }
+    }
+  }
+}

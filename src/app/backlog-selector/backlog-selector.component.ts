@@ -8,9 +8,10 @@ import { ThemePalette } from "@angular/material/core";
 })
 export class BacklogSelectorComponent implements OnInit {
 
-  panelOpenState = false;
-
   color: ThemePalette = 'warn';
+
+  // toggle
+  panelOpenState = false;
   checked = true;
   disabled = false;
 
