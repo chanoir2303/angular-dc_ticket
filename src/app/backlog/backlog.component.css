@@ -24,6 +24,7 @@
   font-weight: bold;
 }
 
-.h-card {
+tr.mat-row:hover {
   background-color: #f44336;
+  transition: 0.1s ease;
 }

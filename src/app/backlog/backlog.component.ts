@@ -15,7 +15,6 @@ export class BacklogComponent implements OnInit {
   // table
   displayedColumns: string[] = ['id', 'status', 'lvl', 'category', 'tag', 'agent', 'lastUpdateTimestamp', 'lastUpdateAgent', 'userMail', 'closeTimestamp'];
   dataSource = BACKLOG_DATA;
-  hover = false;
 
   constructor() { }
 

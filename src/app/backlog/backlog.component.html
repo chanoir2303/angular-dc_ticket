@@ -55,10 +55,7 @@
     mat-row *matRowDef="let row;
     columns: displayedColumns;
     let ticket"
-    routerLink="/backlog/{{ticket.id}}"
-    (mouseover)="hover=true"
-    (mouseleave)="hover=false"
-    [class.h-card]="hover == true">
+    routerLink="/backlog/{{ticket.id}}">
   </tr>
 </table>
 
