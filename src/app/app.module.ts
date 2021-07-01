@@ -43,6 +43,7 @@ import { ProfileButtonComponent } from './profile-button/profile-button.componen
 
 // tiers
 import { ChartsModule } from "ng2-charts";
+import { BacklogTicketViewComponent } from './backlog-ticket-view/backlog-ticket-view.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { ChartsModule } from "ng2-charts";
     ProfileViewComponent,
     ProfileInfosComponent,
     ProfileChartComponent,
-    ProfileButtonComponent
+    ProfileButtonComponent,
+    BacklogTicketViewComponent
   ],
   imports: [
     BrowserModule,

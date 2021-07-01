@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemePalette } from "@angular/material/core";
 import { BACKLOG_DATA } from "../mock-ticket";
-import {ThemePalette } from "@angular/material/core";
+
 
 @Component({
   selector: 'app-backlog',
@@ -9,14 +10,15 @@ import {ThemePalette } from "@angular/material/core";
 })
 export class BacklogComponent implements OnInit {
 
+  color: ThemePalette = 'warn';
+
+  // table
   displayedColumns: string[] = ['id', 'status', 'lvl', 'category', 'tag', 'agent', 'lastUpdateTimestamp', 'lastUpdateAgent', 'userMail', 'closeTimestamp'];
   dataSource = BACKLOG_DATA;
-
-  color: ThemePalette = 'warn';
+  hover = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
