@@ -24,7 +24,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatCardModule } from "@angular/material/card";
-import { ScrollingModule } from '@angular/cdk/scrolling';
+import {MatChipsModule} from '@angular/material/chips';
+
 
 // component
 import { AppComponent } from './app.component';
@@ -40,10 +41,10 @@ import { ProfileViewComponent } from './profile-view/profile-view.component';
 import { ProfileInfosComponent } from './profile-infos/profile-infos.component';
 import { ProfileChartComponent } from './profile-chart/profile-chart.component';
 import { ProfileButtonComponent } from './profile-button/profile-button.component';
+import { BacklogTicketViewComponent } from './backlog-ticket-view/backlog-ticket-view.component';
 
 // tiers
 import { ChartsModule } from "ng2-charts";
-import { BacklogTicketViewComponent } from './backlog-ticket-view/backlog-ticket-view.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +88,7 @@ import { BacklogTicketViewComponent } from './backlog-ticket-view/backlog-ticket
     FormsModule,
     MatCardModule,
     ChartsModule,
-    ScrollingModule
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

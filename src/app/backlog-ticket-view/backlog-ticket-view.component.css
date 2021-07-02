@@ -1,0 +1,52 @@
+mat-card {
+  width: 1250px;
+  height: 650px;
+  margin-top: 15px;
+}
+
+.ticket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-form-field {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.head {
+  display: flex;
+}
+
+.chips {
+  margin-bottom: 15px;
+}
+
+.new-chip {
+  background-color: #23FD8D;
+}
+
+.pending-chip {
+  background-color: #FFDE1C;
+}
+
+textarea {
+  height: 300px;
+}
+
+button {
+  margin-top: -650px;
+  margin-left: 15px;
+}
+
+.id-ticket {
+  margin-bottom: 15px;
+}
+
+.idt {
+  background-color: #f44336;
+  color: white;
+}

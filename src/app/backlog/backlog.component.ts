@@ -10,14 +10,16 @@ import { BACKLOG_DATA } from "../mock-ticket";
 })
 export class BacklogComponent implements OnInit {
 
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
   color: ThemePalette = 'warn';
 
   // table
   displayedColumns: string[] = ['id', 'status', 'lvl', 'category', 'tag', 'agent', 'lastUpdateTimestamp', 'lastUpdateAgent', 'userMail', 'closeTimestamp'];
   dataSource = BACKLOG_DATA;
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
 }

@@ -8,9 +8,9 @@ import { ThemePalette } from "@angular/material/core";
 })
 export class BacklogNavbarComponent implements OnInit {
 
-  color: ThemePalette = 'warn';
-
   constructor() { }
+
+  color: ThemePalette = 'warn';
 
   ngOnInit(): void {
   }

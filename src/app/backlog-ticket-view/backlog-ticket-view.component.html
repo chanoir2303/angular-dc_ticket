@@ -1,4 +1,55 @@
-<span>ok</span>
-<div *ngIf="ticket">
-  {{ticket.id}}
+<div class="ticket" *ngIf="ticket">
+
+  <mat-card>
+
+    <div class="id-ticket">
+      <mat-chip-list>
+        <mat-chip class="idt" disabled="disabled">#{{ticket.id}}</mat-chip>
+      </mat-chip-list>
+    </div>
+
+    <div class="head">
+
+      <mat-form-field appearance="fill">
+        <mat-label>{{ticket.category}}</mat-label>
+        <mat-select>
+          <mat-option value="one">Account</mat-option>
+          <mat-option value="two">Errors</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>{{ticket.tag}}</mat-label>
+        <mat-select>
+          <mat-option value="one">Forgotten password</mat-option>
+          <mat-option value="two">404</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+    </div>
+
+    <mat-form-field appearance="fill">
+      <mat-label>From : </mat-label>
+      <input matInput value="{{ticket.userMail}}" disabled="disabled">
+    </mat-form-field>
+
+
+
+    <div class="chips">
+      <mat-chip-list>
+        <mat-chip class="new-chip">New</mat-chip>
+        <mat-chip class="pending-chip">Pending</mat-chip>
+        <mat-chip class="close-chip">Close</mat-chip>
+      </mat-chip-list>
+    </div>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Description</mat-label>
+      <textarea matInput disabled="disabled"></textarea>
+    </mat-form-field>
+
+  </mat-card>
+
+  <button mat-icon-button (click)="goBack()"><mat-icon>close</mat-icon></button>
+
 </div>
