@@ -10,7 +10,7 @@
 
     <div class="head">
 
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="fill" [color]="color">
         <mat-label>{{ticket.category}}</mat-label>
         <mat-select>
           <mat-option value="one">Account</mat-option>
@@ -18,7 +18,7 @@
         </mat-select>
       </mat-form-field>
 
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="fill" [color]="color">
         <mat-label>{{ticket.tag}}</mat-label>
         <mat-select>
           <mat-option value="one">Forgotten password</mat-option>
