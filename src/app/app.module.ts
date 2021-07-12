@@ -45,6 +45,8 @@ import { BacklogTicketViewComponent } from './backlog-ticket-view/backlog-ticket
 
 // tiers
 import { ChartsModule } from "ng2-charts";
+import { TeamViewComponent } from './team-view/team-view.component';
+import { TeamPanelComponent } from './team-panel/team-panel.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,9 @@ import { ChartsModule } from "ng2-charts";
     ProfileInfosComponent,
     ProfileChartComponent,
     ProfileButtonComponent,
-    BacklogTicketViewComponent
+    BacklogTicketViewComponent,
+    TeamViewComponent,
+    TeamPanelComponent
   ],
   imports: [
     BrowserModule,

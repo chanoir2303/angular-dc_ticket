@@ -1,4 +1,4 @@
-import {TicketTemplate} from "./ticket";
+import { TicketTemplate } from "./ticket";
 
 export const BACKLOG_DATA: TicketTemplate[] = [
   {
@@ -11,7 +11,8 @@ export const BACKLOG_DATA: TicketTemplate[] = [
     lastUpdateTimestamp: "06/22/2021",
     lastUpdateAgent: "",
     userMail: "user4@digitalchick.fr",
-    closeTimestamp: ""
+    closeTimestamp: "",
+    description: "test"
   },
   {
     id: 9,
@@ -23,7 +24,8 @@ export const BACKLOG_DATA: TicketTemplate[] = [
     lastUpdateTimestamp: "06/21/2021",
     lastUpdateAgent: "Sirius Black",
     userMail: "user3@digitalchick.fr",
-    closeTimestamp: ""
+    closeTimestamp: "",
+    description: ""
   },
   {
     id: 8,
@@ -35,7 +37,8 @@ export const BACKLOG_DATA: TicketTemplate[] = [
     lastUpdateTimestamp: "06/21/2021",
     lastUpdateAgent: "Sirius Black",
     userMail: "user@digitalchick.fr",
-    closeTimestamp: "06/21/2021"
+    closeTimestamp: "06/21/2021",
+    description: ""
   },
   {
     id: 7,
@@ -47,7 +50,8 @@ export const BACKLOG_DATA: TicketTemplate[] = [
     lastUpdateTimestamp: "06/20/2021",
     lastUpdateAgent: "Sasha Ketchum",
     userMail: "user2@digitalchick.fr",
-    closeTimestamp: "06/20/2021"
+    closeTimestamp: "06/20/2021",
+    description: ""
   },
   {
     id: 6,
@@ -59,7 +63,8 @@ export const BACKLOG_DATA: TicketTemplate[] = [
     lastUpdateTimestamp: "06/20/2021",
     lastUpdateAgent: "Sasha Ketchum",
     userMail: "user@digitalchick.fr",
-    closeTimestamp: "06/20/2021"
+    closeTimestamp: "06/20/2021",
+    description: ""
   },
   {
     id: 5,
@@ -71,7 +76,8 @@ export const BACKLOG_DATA: TicketTemplate[] = [
     lastUpdateTimestamp: "06/22/2021",
     lastUpdateAgent: "",
     userMail: "user4@digitalchick.fr",
-    closeTimestamp: ""
+    closeTimestamp: "",
+    description: ""
   },
   {
     id: 4,
@@ -83,7 +89,8 @@ export const BACKLOG_DATA: TicketTemplate[] = [
     lastUpdateTimestamp: "06/21/2021",
     lastUpdateAgent: "Sirius Black",
     userMail: "user3@digitalchick.fr",
-    closeTimestamp: ""
+    closeTimestamp: "",
+    description: ""
   },
   {
     id: 3,
@@ -95,7 +102,8 @@ export const BACKLOG_DATA: TicketTemplate[] = [
     lastUpdateTimestamp: "06/21/2021",
     lastUpdateAgent: "Sirius Black",
     userMail: "user@digitalchick.fr",
-    closeTimestamp: "06/21/2021"
+    closeTimestamp: "06/21/2021",
+    description: ""
   },
   {
     id: 2,
@@ -107,7 +115,8 @@ export const BACKLOG_DATA: TicketTemplate[] = [
     lastUpdateTimestamp: "06/20/2021",
     lastUpdateAgent: "Sasha Ketchum",
     userMail: "user2@digitalchick.fr",
-    closeTimestamp: "06/20/2021"
+    closeTimestamp: "06/20/2021",
+    description: ""
   },
   {
     id: 1,
@@ -119,6 +128,7 @@ export const BACKLOG_DATA: TicketTemplate[] = [
     lastUpdateTimestamp: "06/20/2021",
     lastUpdateAgent: "Sasha Ketchum",
     userMail: "user@digitalchick.fr",
-    closeTimestamp: "06/20/2021"
+    closeTimestamp: "06/20/2021",
+    description: ""
   }
 ];

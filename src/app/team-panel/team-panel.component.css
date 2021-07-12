@@ -1,0 +1,9 @@
+mat-expansion-panel {
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+mat-panel-title {
+  display: flex;
+  justify-content: space-between;
+}

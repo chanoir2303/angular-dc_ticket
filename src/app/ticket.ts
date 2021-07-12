@@ -9,4 +9,5 @@ export interface TicketTemplate {
   lastUpdateAgent: string;
   userMail: string;
   closeTimestamp: string;
+  description: string;
 }

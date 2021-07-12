@@ -1,0 +1,22 @@
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false" *ngFor="let groups of groups">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <mat-icon>groups</mat-icon>
+        {{groups.nameGroups}}
+      </mat-panel-title>
+      <mat-panel-description>
+        app {{groups.app}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-list>
+      <div *ngFor="let teammate of data">
+        <mat-list-item><button mat-button>{{teammate.nameAgent}}</button></mat-list-item>
+        <mat-divider></mat-divider>
+      </div>
+      <mat-list-item><button mat-button><mat-icon>add</mat-icon> add agent</button></mat-list-item>
+    </mat-list>
+  </mat-expansion-panel>
+</mat-accordion>
