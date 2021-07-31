@@ -14,14 +14,14 @@ const GROUPS_DATA: GroupsTemplate[] = [
   { nameGroups: "Team 1", app: "1 & 2" },
   { nameGroups: "Team 2", app: "3 & 4" },
   { nameGroups: "Team 3", app: "5 & 6" },
-  { nameGroups: "Team 4", app: "7 & 8" },
+  { nameGroups: "Team 4", app: "6 & 7" }
 ]
 
 const TEAMS_DATA: TeamsTemplate[] = [
   { id: 1, nameAgent: "Mickey Mouse" },
   { id: 2, nameAgent: "Sirius Black" },
   { id: 3, nameAgent: "Sacha Ketchum" },
-  { id: 4, nameAgent: "SpongeBob"}
+  { id: 4, nameAgent: "Sponge Bob"}
 ]
 
 @Component({

@@ -24,7 +24,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatCardModule } from "@angular/material/card";
-import {MatChipsModule} from '@angular/material/chips';
+import { MatChipsModule } from '@angular/material/chips';
 
 
 // component
@@ -36,17 +36,18 @@ import { BacklogViewComponent } from './backlog-view/backlog-view.component';
 import { BacklogNavbarComponent } from './backlog-navbar/backlog-navbar.component';
 import { BacklogButtonComponent } from './backlog-button/backlog-button.component';
 import { BacklogDialogComponent } from './backlog-dialog/backlog-dialog.component';
+import { BacklogTicketViewComponent } from './backlog-ticket-view/backlog-ticket-view.component';
 import { NotificationsDialogComponent } from './notifications-dialog/notifications-dialog.component';
 import { ProfileViewComponent } from './profile-view/profile-view.component';
 import { ProfileInfosComponent } from './profile-infos/profile-infos.component';
 import { ProfileChartComponent } from './profile-chart/profile-chart.component';
 import { ProfileButtonComponent } from './profile-button/profile-button.component';
-import { BacklogTicketViewComponent } from './backlog-ticket-view/backlog-ticket-view.component';
+import { TeamViewComponent } from './team-view/team-view.component';
+import { TeamPanelComponent } from './team-panel/team-panel.component';
+import { TeamPanelButtonComponent } from './team-panel-button/team-panel-button.component';
 
 // tiers
 import { ChartsModule } from "ng2-charts";
-import { TeamViewComponent } from './team-view/team-view.component';
-import { TeamPanelComponent } from './team-panel/team-panel.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { TeamPanelComponent } from './team-panel/team-panel.component';
     ProfileButtonComponent,
     BacklogTicketViewComponent,
     TeamViewComponent,
-    TeamPanelComponent
+    TeamPanelComponent,
+    TeamPanelButtonComponent
   ],
   imports: [
     BrowserModule,
